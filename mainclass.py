@@ -25,14 +25,14 @@ class bagad:
 				pass
 			if count[0] == 4:
 				corners[1] = list([pyautogui.position()[0] - corners[0][0],pyautogui.position()[1] - corners[0][1]])
-				print p				
+				print corners				
 				listener.stop()
 				pass
 
 		with Listener(on_click=on_click) as listener:
 			listener.join()
 		
-		self.Image = pyautogui.screenshot(region=p[0]+p[1])
+		self.Image = pyautogui.screenshot(region=corners[0]+corners[1])
 		pass
 
 	def readText(self):
