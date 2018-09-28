@@ -27,7 +27,6 @@ class bagad:
 				corners[1] = list([pyautogui.position()[0] - corners[0][0],pyautogui.position()[1] - corners[0][1]])
 				print p				
 				listener.stop()
-				#print p[1]
 				pass
 
 		with Listener(on_click=on_click) as listener:
